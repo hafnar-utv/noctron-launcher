@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy</title>
+<meta name="description" content="Privacy Policy for Noctron Launcher (com.noctron.launcher).">
+<meta name="theme-color" content="#050506">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #050506;
+    --fg: #E7E9EC;
+    --muted: #8A929D;
+    --line: #23262B;
+    --accent: #C7CED8;
+    --mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", "DejaVu Sans Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--mono);
+    font-size: 15.5px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    padding: 56px 24px 80px;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  .back {
+    display: inline-block;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    margin-bottom: 32px;
+  }
+  .back:hover, .back:focus-visible { color: var(--accent); }
+  h1 {
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin: 0 0 24px;
+  }
+  h2 {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 44px 0 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+  h3 {
+    font-size: 13.5px;
+    font-weight: 400;
+    margin: 22px 0 6px;
+    color: #D3D7DD;
+  }
+  p, li { margin: 0 0 12px; }
+  ul { margin: 0 0 14px; padding-left: 18px; }
+  li { margin-bottom: 8px; }
+  code, .mono { font-family: var(--mono); color: #C7CED8; }
+  dl.meta {
+    margin: 0 0 8px;
+    padding: 16px 18px;
+    border: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 8px 20px;
+    font-size: 14px;
+  }
+  dl.meta dt { color: var(--muted); letter-spacing: 0.04em; }
+  dl.meta dd { margin: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: 8px 0 18px;
+  }
+  caption {
+    text-align: left;
+    color: var(--muted);
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+    padding-bottom: 8px;
+  }
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 12px 10px 0;
+    border-top: 1px solid var(--line);
+  }
+  th { color: var(--muted); font-weight: 400; letter-spacing: 0.04em; white-space: nowrap; }
+  a { color: var(--accent); text-decoration-color: var(--line); text-underline-offset: 3px; }
+  a:hover, a:focus-visible { text-decoration-color: currentColor; }
+  .note { color: var(--muted); font-size: 13.5px; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+  }
+  @media (max-width: 560px) {
+    body { padding: 40px 18px 64px; font-size: 15px; }
+    dl.meta { grid-template-columns: 1fr; gap: 4px; }
+    dl.meta dd { margin-bottom: 10px; }
+    th, td { display: block; padding: 6px 0; border-top: 0; }
+    tr { display: block; border-top: 1px solid var(--line); padding: 12px 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← Noctron Launcher</a>
+
+  <h1>Privacy Policy</h1>
+
+  <dl class="meta">
+    <dt>App</dt><dd>Noctron Launcher (<span class="mono">com.noctron.launcher</span>)</dd>
+    <dt>Developer</dt><dd>Helge Kolstad</dd>
+    <dt>Contact</dt><dd><a href="mailto:imp.kolstad@gmail.com">imp.kolstad@gmail.com</a></dd>
+    <dt>Effective date</dt><dd>2026-11-24</dd>
+  </dl>
+
+  <p>Noctron Launcher is an Android home screen replacement. It works offline and keeps your
+  information on your own device. There are no accounts, no advertising, no analytics, no crash
+  telemetry and no third-party tracking or advertising SDKs anywhere in the app.</p>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li>It does not create an account or ask for a sign-in.</li>
+    <li>It does not show ads and contains no advertising SDK or advertising ID access.</li>
+    <li>It does not use analytics, crash reporting, attribution or A/B testing services.</li>
+    <li>It does not sell, rent or share personal data with anyone.</li>
+    <li>It does not run an update check, heartbeat or remote-config fetch.</li>
+  </ul>
+
+  <h2>Network requests</h2>
+  <p>The launcher makes network requests in exactly three situations, each tied to a feature you
+  choose to use. All of them use HTTPS and none of them carry an account, device identifier or
+  advertising identifier.</p>
+
+  <table>
+    <caption>Outbound requests</caption>
+    <tr>
+      <th>Weather</th>
+      <td>
+        When the weather readout is enabled, the app sends your <strong>coarse latitude and
+        longitude</strong> (rounded to four decimal places) and your chosen
+        <strong>temperature unit</strong> to Open-Meteo at
+        <span class="mono">api.open-meteo.com</span>. Location is only read if you granted the
+        optional approximate-location permission; without it the request uses a fixed default
+        coordinate. The returned temperature and weather code are cached on your device.
+      </td>
+    </tr>
+    <tr>
+      <th>Search suggestions</th>
+      <td>
+        While you type in the command bar (from the second character), the <strong>text of your
+        query</strong> is sent to Google (<span class="mono">suggestqueries.google.com</span>) or
+        DuckDuckGo (<span class="mono">duckduckgo.com</span>) to fetch autocomplete suggestions,
+        depending on your setting. You can switch this off in the launcher settings, after which no
+        suggestion request is ever made. Suggestions are not stored.
+      </td>
+    </tr>
+    <tr>
+      <th>Currency rates</th>
+      <td>
+        When you use the currency conversion command, the app fetches a public exchange-rate table
+        from <span class="mono">open.er-api.com</span>. The request contains no user data at all; the
+        rates are cached locally for a day.
+      </td>
+    </tr>
+  </table>
+
+  <p class="note">Those three endpoints are the only destinations the app contacts. They are
+  ordinary web services, subject to their own privacy policies (Open-Meteo, Google, DuckDuckGo,
+  ExchangeRate-API); the launcher sends them nothing beyond what is listed above.</p>
+
+  <h2>On-device permissions</h2>
+  <p>The launcher asks for a few sensitive permissions because a home screen cannot do its job
+  without them. In every case the data is read and processed on your device only — it is not
+  transmitted, uploaded or shared.</p>
+
+  <h3>Installed apps — <span class="mono">QUERY_ALL_PACKAGES</span></h3>
+  <p>Used to build the app list, search your apps and apply icon packs. Package names and labels are
+  cached locally so the list opens instantly.</p>
+
+  <h3>Contacts — <span class="mono">READ_CONTACTS</span></h3>
+  <p>Used while you search, so typing a name offers the matching contact and its phone number,
+  email address or photo thumbnail. Contact data stays in memory for that search and is never
+  written to storage.</p>
+
+  <h3>Calendar — <span class="mono">READ_CALENDAR</span></h3>
+  <p>Used to show upcoming events in the header agenda. Events are read-only, held in memory, and
+  only the calendars you select in settings are queried.</p>
+
+  <h3>Usage access — <span class="mono">PACKAGE_USAGE_STATS</span></h3>
+  <p>Used to sort frequently used apps first. The app reads a weekly foreground-time summary and
+  keeps it in memory only.</p>
+
+  <h3>Files — Storage Access Framework</h3>
+  <p>File search uses the system folder picker, so the launcher holds no storage permission. If you
+  grant a folder, the app remembers that grant locally and searches file names inside it. It does
+  not read file contents and does not touch anything outside the folder you picked.</p>
+
+  <h3>Other permissions</h3>
+  <ul>
+    <li><span class="mono">INTERNET</span> — the three requests described above.</li>
+    <li><span class="mono">POST_NOTIFICATIONS</span> — lets the launcher post its single local
+    "silent notifications are waiting" summary.</li>
+    <li><span class="mono">EXPAND_STATUS_BAR</span>, app-widget hosting and
+    <span class="mono">REQUEST_DELETE_PACKAGES</span> — open the notification shade, host home-screen
+    widgets and show the system uninstall dialog.</li>
+    <li><span class="mono">SET_ALARM</span> — hands alarms and timers to your clock app.</li>
+  </ul>
+
+  <h2>Notification access</h2>
+  <p>If you enable notification access, the app reads the <strong>title</strong>,
+  <strong>body text</strong>, <strong>package name</strong> and <strong>timestamp</strong> of
+  notifications, solely to show them in the launcher's notification hub and to hold "silent"
+  notifications until you ask to see them. This content is stored in the app's local database on
+  your device and is never transmitted anywhere.</p>
+
+  <p><strong>Backup:</strong> the launcher excludes that database
+  (<span class="mono">calakmwl_db</span>) from Google Cloud backup through its
+  <span class="mono">data_extraction_rules.xml</span> rules, so notification content is never copied
+  to Google's servers. App settings (<span class="mono">calakmwl_prefs</span> — theme, layout and
+  preference values, no message content) may be included in cloud backup according to your Android
+  backup settings.</p>
+
+  <h2>Accessibility service</h2>
+  <p>The app's <span class="mono">NoctronAccessibilityService</span> exists for one purpose: to lock
+  the screen (<span class="mono">GLOBAL_ACTION_LOCK_SCREEN</span>) when you use a lock-screen
+  gesture. It does not read screen or window content, it does not inspect interface text, and it
+  does not process accessibility events. You can disable it at any time in Android's accessibility
+  settings; only the lock gesture stops working.</p>
+
+  <h2>What is stored on your device</h2>
+  <ul>
+    <li>A local database with your home screen layout, folders, notes and tasks, plus the retained
+    notification rows described above.</li>
+    <li>Preferences such as theme, icon style, gesture bindings and which calendars or search
+    folder you picked.</li>
+    <li>Short-lived caches: the last weather reading and the daily currency rates.</li>
+  </ul>
+  <p>Nothing in that list is uploaded by the launcher.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Everything the launcher stores lives inside its own storage on your device. Clearing the app's
+  storage (Settings → Apps → Noctron Launcher → Storage → Clear storage) or uninstalling the app
+  removes all of it, including notes, layout and retained notifications. There is no server-side
+  copy to delete. If Android's cloud backup is enabled, remove the launcher's backup entry in your
+  Google backup settings to delete that copy as well.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Noctron Launcher is a general-purpose home screen app, not directed at children under 13. It
+  collects no personal information from anyone, so it collects none from children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the app's data handling changes, this page will be updated and the effective date above
+  revised. Material changes will also be noted in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or about data in the app:
+  <a href="mailto:imp.kolstad@gmail.com">imp.kolstad@gmail.com</a>. Issues and feature requests are
+  welcome at <a href="https://github.com/hafnar-utv/noctron-launcher/issues">github.com/hafnar-utv/noctron-launcher/issues</a>.</p>
+
+  <footer>
+    Noctron Launcher · <span class="mono">com.noctron.launcher</span> · Privacy Policy effective 2026-11-24
+  </footer>
+</main>
+</body>
+</html>

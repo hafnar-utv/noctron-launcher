@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noctron Launcher</title>
+<meta name="description" content="Noctron Launcher — a dark, keyboard-first Android home screen for com.noctron.launcher.">
+<meta name="theme-color" content="#050506">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #050506;
+    --panel: #0B0C0E;
+    --fg: #E7E9EC;
+    --muted: #8A929D;
+    --line: #23262B;
+    --accent: #C7CED8;
+    --mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", "DejaVu Sans Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--mono);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    padding: 56px 24px 72px;
+  }
+  main { max-width: 660px; margin: 0 auto; }
+  .mark { display: block; width: 64px; height: 64px; margin: 0 0 28px; }
+  h1 {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+  }
+  .pkg {
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    margin: 0 0 32px;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--line);
+    margin: 32px 0;
+  }
+  p { margin: 0 0 18px; }
+  .lead { color: #D3D7DD; }
+  .muted { color: var(--muted); }
+  ul.nav { list-style: none; margin: 0; padding: 0; }
+  ul.nav li { border-top: 1px solid var(--line); }
+  ul.nav li:last-child { border-bottom: 1px solid var(--line); }
+  ul.nav a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 14px 2px;
+    color: var(--fg);
+    text-decoration: none;
+  }
+  ul.nav a:hover, ul.nav a:focus-visible { color: var(--accent); }
+  ul.nav .label { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; }
+  ul.nav a:hover .label, ul.nav a:focus-visible .label { text-decoration-color: currentColor; }
+  ul.nav .hint { color: var(--muted); font-size: 13px; white-space: nowrap; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 48px;
+    color: var(--muted);
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+  }
+  @media (max-width: 480px) {
+    body { padding: 40px 18px 56px; }
+    h1 { font-size: 22px; letter-spacing: 0.14em; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <svg class="mark" viewBox="0 0 108 108" aria-hidden="true" focusable="false">
+    <path d="M54,24 L37,39 L43,53 Z" fill="#3A4048"/>
+    <path d="M54,24 L71,39 L65,53 Z" fill="#16181C"/>
+    <path d="M37,39 L43,53 L37,69 Z" fill="#1D2025"/>
+    <path d="M71,39 L71,69 L65,53 Z" fill="#2B2F36"/>
+    <path d="M37,69 L43,53 L54,84 Z" fill="#0E1012"/>
+    <path d="M71,69 L65,53 L54,84 Z" fill="#3A3F47"/>
+    <path d="M54,24 L65,53 L54,84 L43,53 Z" fill="#020203"/>
+    <path d="M54,24 L71,39 L71,69 L54,84 L37,69 L37,39 Z" fill="none" stroke="#6E7682" stroke-width="0.8"/>
+    <path d="M54,24 L65,53 L54,84 L43,53 Z" fill="none" stroke="#484E57" stroke-width="0.7"/>
+    <path d="M37,39 L43,53 M71,39 L65,53 M37,69 L43,53 M71,69 L65,53" fill="none" stroke="#5A616B" stroke-width="0.6"/>
+  </svg>
+
+  <h1>Noctron Launcher</h1>
+  <p class="pkg">com.noctron.launcher</p>
+
+  <p class="lead">A dark, keyboard-first home screen for Android. Everything lives on one monospace surface:
+  apps, search, notifications and notes, arranged in a geometric black-and-grey crystal.</p>
+
+  <p class="muted">No accounts, no ads, no analytics. The launcher keeps your data on your device.</p>
+
+  <hr>
+
+  <ul class="nav">
+    <li><a href="privacy-policy.html"><span class="label">Privacy Policy</span><span class="hint">what is on your device →</span></a></li>
+    <li><a href="https://github.com/hafnar-utv/noctron-launcher/releases"><span class="label">Releases</span><span class="hint">download builds →</span></a></li>
+  </ul>
+
+  <footer>
+    Noctron Launcher · Android · <a href="https://github.com/hafnar-utv/noctron-launcher">github.com/hafnar-utv/noctron-launcher</a>
+  </footer>
+</main>
+</body>
+</html>
